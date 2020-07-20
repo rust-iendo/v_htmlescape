@@ -21,8 +21,8 @@ bytes-buf = ["buf-min/bytes-buf"]
 
 [dependencies]
 v_escape_derive = { version = "0.8", path = "../v_escape_derive" }
-buf-min = "0.1"
+buf-min = { git = "https://github.com/botika/buf-min", branch = "alloc" }
 
 [dev-dependencies]
-bytes = "0.5"
-buf-min = { version = "0.1", features = ["bytes-buf"] }
+bytes = { git = "https://github.com/botika/bytes", branch = "alloc" }
+buf-min = { git = "https://github.com/botika/buf-min", branch = "alloc", features = ["bytes-buf"]}
